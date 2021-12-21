@@ -17,6 +17,7 @@ const result = testCases.map(function (d, i) {
   }
   console.error(i, d)
   const functionCode = parseExpression(d)
+  console.log(functionCode)
   eval(functionCode)
   const solutions = findSolutions()
   solutions.sort()
